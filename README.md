@@ -1,2 +1,2 @@
-# ISO---UNLP
+# ISO-UNLP
 Introducción a los Sistemas Operativos 
