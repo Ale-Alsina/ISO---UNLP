@@ -9,7 +9,7 @@ Lila
 Negro
 Rojo
 Amarillo
-redder
+red-der
 Violeta
 neuquen
 Marrón
