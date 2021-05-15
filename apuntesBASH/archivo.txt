@@ -8,6 +8,7 @@ Lila
 Negro
 Rojo
 Amarillo
+redder
 Violeta
 Marrón
 Celeste
