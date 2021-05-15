@@ -1,0 +1,14 @@
+Verde
+Naranja
+Gris
+Azul
+Blanco
+Rosa
+Lila
+Negro
+Rojo
+Amarillo
+Violeta
+Marrón
+Celeste
+Fucsia
