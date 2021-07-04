@@ -12,19 +12,19 @@ error="INVALID PARAMETERS"                # Inicializar "error" con valor inicia
     if [ $num_columna -gt 0 ];then                # si si la columna pedida es mayor a 0. Entonces...
       if [ ! $num_fila -lt 1 ];then               # si numero de fila pedida no es menor a 1. Entonces... 
         if [ $num_fila -gt $tot_filas ];then       # si num de fila supera total filas archivo. Entonces...                                
-          echo "$error 4"                               # Mostrar Msj error  
+          echo "$error"                               # Mostrar Msj error  
           exit 4                                      # Error en nro fila sup tot filas del archivo = exit 4
         fi                                          # Fin if 4
       else                                          # sino ...no valido 2do param-> es menor a cabecera de arch
-        echo "$error 3"                                 # Mostrar Msj error 
+        echo "$error"                                 # Mostrar Msj error 
         exit 3                                        # Error en nro fila menor a la cabecera = exit 4
       fi                                           # Fin if 3
     else                                           #sino... 
-      echo "$error 2"
+      echo "$error"
       exit 2        #-> Error en columna = exit 2
     fi
   else
-   echo "$error 1"
+   echo "$error"
    exit 1           #-> Error en la cant = exit 1
   fi
 
