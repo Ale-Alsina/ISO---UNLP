@@ -41,3 +41,5 @@ echo "$(cat $nom_archivo | head -n ${num_fila} | tail -n 1 | cut -d';' -f${num_c
 
 #El 3er valor es la cant de filas q poseen dicho valor para la colum indicada en el 2do parám en el archivo.
 echo "$(cat $nom_archivo | cut -d';' -f$num_columna | grep "$nom_colum" | wc -l)"
+
+
