@@ -8,7 +8,6 @@ Por ejemplo:
   [13]mail,                 [14]web,                      [15]latitud,        [16] longitud,     [F17]tipo_latitud_longitud,
   [18]actividad_especifica, [F19]denominacion_especifica, [20]otro_domicilio, [21]fuente,        [22]institucion_organizadora,
   [23]actividades_culturales, [24]mes,   [25]como_llegar, [26]anio_de_inicio
-
 Luego, cada fila del archivo contiene la lista de valores para cada columna también separados por coma (,).
 
 Su script va recibir tres parámetros:
@@ -21,7 +20,7 @@ Su script debe retornar:
   -La cantidad de festividades en la provincia indicada en el primer parámetro 
    (Cuidado con falsos positivos,en la columna provincia "Buenos Aires" no es igual a "Ciudad de Buenos Aires").
   -El nombre de la festividad para la fila indicada en el segundo parámetro (el valor de la columna nombre).
-  - La cantidad de festividades de ese tipo (ignorando mayúsculas y minúsculas, ej. Festividad es lo mismo que FESTIVIDAD)
+  -La cantidad de festividades de ese tipo (ignorando mayúsculas y minúsculas, ej. Festividad es lo mismo que FESTIVIDAD)
 
 Recuerde que la primer fila de datos es la segunda del archivo (la primera es el encabezado con el nombre de columna)
 Por ejemplo si recibo:
@@ -39,13 +38,12 @@ Por ejemplo si recibo:
   Buenos Aires 0
   Debo imprimir:
     "INVALID PARAMETERS"
-
 Explicación: La primer fila debe ser siempre mayor a 0
+
 Por ejemplo si recibo
   "Santa Fé" 5900 Festival
   Debo imprimir:
     "INVALID PARAMETERS"
-
 Explicación: La fila 5900 no existe en el archivo...
 
 Es imperativo y OBLIGATORIO que su script retorne los valores en el orden indicado y como se detallo anteriormente.
