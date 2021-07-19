@@ -13,20 +13,19 @@ function checkDir(){
     ruta='./'$ruta;
     cd './'$ruta;
   else
-    mkdir $ruta;
+    mkdir $ruta;              # crear directorio
     echo "Se creara $ruta de prueba con archivos Iso, pepE y Maria";
-    cd './'$ruta;
-    touch IsO pepE Maria; # agregar archivos separados por ","
-    
-  fi
-  
-  
+    cd './'$ruta;             # ingresar al directorio creado
+    touch IsO pepE Maria;     # agregar o crear archivos 
+  fi  
 }
 
 ruta="DIR"; # simular un dir y crear 3 archivos "ponele el nom que quieras"
 checkDir;       # retorna con la ruta para ser tratado
 ls  | tr a-zA-Z A-Za-z | tr -d [aA];
 # Donde 
-#    => 1ro lista el contenido
+#    => 1ro tr -d [aA]       -> alimina tanto "a" como "A" de cadena c/nom arch
 #    => 2do tr a-zA-Z A-Za-z -> intercambio de mayusc a minusc y visceversa
-#    => 3ro tr -d [aA]       -> alimina tanto "a" como "A" de cadena c/nom arch
+#    => 3ro lista el contenido
+
+
